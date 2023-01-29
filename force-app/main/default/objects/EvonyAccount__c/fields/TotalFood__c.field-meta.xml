@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalFood__c</fullName>
+    <description>Total Food</description>
+    <externalId>false</externalId>
+    <formula>(FoodBox_1K__c * 1000) +
+(FoodBox_5K__c * 5000) +
+(FoodBox_10K__c * 10000) +
+(FoodBox_50K__c * 50000) +
+(FoodBox_100K__c * 100000) +
+(FoodBox_500K__c * 500000) +
+(FoodBox_1M__c * 1000000) +
+(FoodBox_5M__c * 5000000)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Food</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
