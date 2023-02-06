@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+	<!-- ApexClass -->
+	<types>
+		<members>AceitarProposta</members>
+		<name>ApexClass</name>
+	</types>
+
+	<!-- ApexPage | VisualForcePage -->
+	<types>
+		<members>GetPrice</members>
+		<name>ApexPage</name>
+	</types>
+
+	<!-- AuraDefinitionBundle -->
+	<types>
+		<members>AssociarLC_NavBtns_Cmp</members>
+		<name>AuraDefinitionBundle</name>
+	</types>
+
+	<!-- BusinessProcess -->
+	<types>
+		<members>Opportunity.Bronze</members>
+		<name>BusinessProcess</name>
+	</types>
+
+    <!-- CompactLayout -->
+    <types>
+        <members>Quote.Bronze_Compact_Layout</members>
+        <name>CompactLayout</name>
+    </types>
+	
+	<!-- CustomField -->
+	<types>
+		<members>Account.auxNIPC__c</members>
+		<name>CustomField</name>
+	</types>
+
+	<!-- CustomLabel -->
+	<types>
+		<members>*</members>
+		<name>CustomLabel</name>
+	</types>
+
+	<!-- CustomMetadata -->
+	<types>
+		<members>ContractLine_DymamicAttribute.Alteracao_Titular</members>
+		<name>CustomMetadata</name>
+	</types>
+
+	<!-- CustomObject -->
+	<types>
+		<members>*</members>
+		<name>CustomObject</name>
+	</types>
+
+	<!-- CustomObjectTranslation -->
+	<types>
+		<members>Quote-pt_BR</members>
+		<name>CustomObjectTranslation</name>
+	</types>
+	
+	<!-- Email Template -->
+	<types>
+		<members>folderName/TemplateName</members>
+		<name>EmailTemplate</name>
+	</types>
+	
+	<!-- EntitlementProcess -->
+	<types>
+		<members>cs_uat_new_caselifecycle_v2</members>
+		<name>EntitlementProcess</name>
+	</types>
+	
+	<!-- FlexiPage | Lightning Record Page -->
+	<types>
+		<members>*</members>
+		<name>FlexiPage</name>
+	</types>
+
+    <!-- Flow -->
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+
+    <!-- Layout -->
+    <types>
+        <members>Opportunity-Oportunidade Bundle Bronze</members>
+        <name>Layout</name>
+    </types>
+	
+	<!-- Lightning Web Component -->
+	<types>
+		<members>*</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	
+	<!-- MilestoneType -->
+	<types>
+		<members>Case Updated</members>
+		<name>MilestoneType</name>
+	</types>
+
+    <!-- PermissionSet -->
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+
+    <!-- QuickAction -->
+    <types>
+        <members>Quote.Associar_Locais_de_Consumo_Bronze</members>
+        <name>QuickAction</name>
+    </types>
+
+    <!-- RecordType -->
+    <types>
+        <members>Opportunity.Opportunity_Bundle_Bronze</members>
+        <name>RecordType</name>
+    </types>
+
+    <!-- RemoteSiteSetting -->
+    <types>
+        <members>*</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+	
+	<!-- StandardValueSet -->
+    <types>
+        <members>OpportunityType</members>
+        <members>QuoteStatus</members>
+        <name>StandardValueSet</name>
+    </types>
+
+     <!-- ValidationRule -->
+    <types>
+        <members>SObject.ValidationRuleName</members>
+        <name>ValidationRule</name>
+    </types>
+
+    <!-- WebLink -->
+    <types>
+        <members>Quote.Obter_Precos</members>
+        <name>WebLink</name>
+    </types>
+
+    <!-- WorkflowOutboundMessage -->
+    <types>
+        <members>Account.insertCompany</members>
+        <name>WorkflowOutboundMessage</name>
+    </types>
+
+    <!-- WorkflowRule -->
+    <types>
+        <members>Account.companyInsertCRMIntegration</members>
+        <name>WorkflowRule</name>
+    </types>
+    <version>49.0</version>
+</Package>

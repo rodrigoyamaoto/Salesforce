@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    <types>
+        <members>Evony_Account__c</members>
+        <members>Evony_General__c</members>
+        <members>Evony_GeneralSpecialtySkills__c</members>
+        <members>Evony_SpecialtySkill__c</members>
+        <members>Evony_Troop__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <types>
+        <members>Evony_UtilityBar</members>
+        <members>General_Record_Page</members>
+        <members>Specialty_Skill_Lightnin_Page</members>
+        <name>FlexiPage</name>
+    </types>
+
+    <!-- EvonyAccount 
+    <types>
+        
+        <members>EvonyAccount__c.FoodBox_1K__c</members>
+        <members>EvonyAccount__c.FoodBox_5K__c</members>
+        <members>EvonyAccount__c.FoodBox_10K__c</members>
+        <members>EvonyAccount__c.FoodBox_50K__c</members>
+        <members>EvonyAccount__c.FoodBox_100K__c</members>
+        <members>EvonyAccount__c.FoodBox_500K__c</members>
+        <members>EvonyAccount__c.FoodBox_1M__c</members>
+        <members>EvonyAccount__c.FoodBox_5M__c</members>
+
+        <members>EvonyAccount__c.LumberBox_1K__c</members>
+        <members>EvonyAccount__c.LumberBox_5K__c</members>
+        <members>EvonyAccount__c.LumberBox_10K__c</members>
+        <members>EvonyAccount__c.LumberBox_50K__c</members>
+        <members>EvonyAccount__c.LumberBox_100K__c</members>
+        <members>EvonyAccount__c.LumberBox_500K__c</members>
+        <members>EvonyAccount__c.LumberBox_1M__c</members>
+        <members>EvonyAccount__c.LumberBox_5M__c</members>
+
+        <members>EvonyAccount__c.OreBox_1K__c</members>
+        <members>EvonyAccount__c.OreBox_5K__c</members>
+        <members>EvonyAccount__c.OreBox_10K__c</members>
+        <members>EvonyAccount__c.OreBox_50K__c</members>
+        <members>EvonyAccount__c.OreBox_100K__c</members>
+        <members>EvonyAccount__c.OreBox_500K__c</members>
+        <members>EvonyAccount__c.OreBox_1M__c</members>
+        <members>EvonyAccount__c.OreBox_5M__c</members>
+
+        <members>EvonyAccount__c.StoneBox_1K__c</members>
+        <members>EvonyAccount__c.StoneBox_5K__c</members>
+        <members>EvonyAccount__c.StoneBox_10K__c</members>
+        <members>EvonyAccount__c.StoneBox_50K__c</members>
+        <members>EvonyAccount__c.StoneBox_100K__c</members>
+        <members>EvonyAccount__c.StoneBox_500K__c</members>
+        <members>EvonyAccount__c.StoneBox_1M__c</members>
+        <members>EvonyAccount__c.StoneBox_5M__c</members>
+
+        <name>CustomField</name>
+    </types>
+    -->
+
+    <version>56.0</version>
+</Package>

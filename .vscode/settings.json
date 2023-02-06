@@ -3,5 +3,10 @@
     "**/node_modules": true,
     "**/bower_components": true,
     "**/.sfdx": true
-  }
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#bb7c07",
+    "titleBar.activeBackground": "#bb7c07",
+    "titleBar.activeForeground": "#F3FCFB"
+  },
 }
