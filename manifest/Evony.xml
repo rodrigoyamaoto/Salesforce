@@ -12,6 +12,7 @@
 
     <types>
         <members>Evony_UtilityBar</members>
+        <members>Evony_AccountLightningPage</members>
         <members>General_Record_Page</members>
         <members>Specialty_Skill_Lightnin_Page</members>
         <name>FlexiPage</name>
