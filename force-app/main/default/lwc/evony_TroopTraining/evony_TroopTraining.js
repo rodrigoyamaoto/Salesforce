@@ -37,8 +37,17 @@ export default class Evony_TroopTraining extends LightningElement {
         }
     }
 
+    clear() {
+        this.dataTableInformation = [];
+    }
+
     handleChange(event) {
+        this.clear();
         this.troopTypeSelected = event.detail.value;
+
+        if(this.troopQuantityToRecruit != null) {
+            this.calculateResources();
+        }
     }
 
     troopQuantityInputBlur(event) {
@@ -58,7 +67,5 @@ export default class Evony_TroopTraining extends LightningElement {
         });
             
         this.dataTableInformation = data;
-        console.log('data = ' + data);
-        console.log('dataTableInformation = ' + this.dataTableInformation);
     }
 }

@@ -1,9 +1,11 @@
 .section {
     margin-top: 2%;
+    max-width: 1300px;
 }
 
 .sectionRow {
     display: flex;
+    max-width: 1300px;
 }
 
 .sectionThreeColumns {
