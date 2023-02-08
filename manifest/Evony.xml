@@ -18,48 +18,10 @@
         <name>FlexiPage</name>
     </types>
 
-    <!-- EvonyAccount 
     <types>
-        
-        <members>EvonyAccount__c.FoodBox_1K__c</members>
-        <members>EvonyAccount__c.FoodBox_5K__c</members>
-        <members>EvonyAccount__c.FoodBox_10K__c</members>
-        <members>EvonyAccount__c.FoodBox_50K__c</members>
-        <members>EvonyAccount__c.FoodBox_100K__c</members>
-        <members>EvonyAccount__c.FoodBox_500K__c</members>
-        <members>EvonyAccount__c.FoodBox_1M__c</members>
-        <members>EvonyAccount__c.FoodBox_5M__c</members>
-
-        <members>EvonyAccount__c.LumberBox_1K__c</members>
-        <members>EvonyAccount__c.LumberBox_5K__c</members>
-        <members>EvonyAccount__c.LumberBox_10K__c</members>
-        <members>EvonyAccount__c.LumberBox_50K__c</members>
-        <members>EvonyAccount__c.LumberBox_100K__c</members>
-        <members>EvonyAccount__c.LumberBox_500K__c</members>
-        <members>EvonyAccount__c.LumberBox_1M__c</members>
-        <members>EvonyAccount__c.LumberBox_5M__c</members>
-
-        <members>EvonyAccount__c.OreBox_1K__c</members>
-        <members>EvonyAccount__c.OreBox_5K__c</members>
-        <members>EvonyAccount__c.OreBox_10K__c</members>
-        <members>EvonyAccount__c.OreBox_50K__c</members>
-        <members>EvonyAccount__c.OreBox_100K__c</members>
-        <members>EvonyAccount__c.OreBox_500K__c</members>
-        <members>EvonyAccount__c.OreBox_1M__c</members>
-        <members>EvonyAccount__c.OreBox_5M__c</members>
-
-        <members>EvonyAccount__c.StoneBox_1K__c</members>
-        <members>EvonyAccount__c.StoneBox_5K__c</members>
-        <members>EvonyAccount__c.StoneBox_10K__c</members>
-        <members>EvonyAccount__c.StoneBox_50K__c</members>
-        <members>EvonyAccount__c.StoneBox_100K__c</members>
-        <members>EvonyAccount__c.StoneBox_500K__c</members>
-        <members>EvonyAccount__c.StoneBox_1M__c</members>
-        <members>EvonyAccount__c.StoneBox_5M__c</members>
-
-        <name>CustomField</name>
+        <members>evony_TroopTraining</members>
+        <name>LightningComponentBundle</name>
     </types>
-    -->
 
     <version>56.0</version>
 </Package>

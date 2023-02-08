@@ -1,0 +1,17 @@
+.section {
+    margin-top: 2%;
+}
+
+.sectionRow {
+    display: flex;
+}
+
+.sectionThreeColumns {
+    flex: 33%;
+    margin: 0.2%;
+}
+
+.buttonThreeColumns {
+    margin-top: 1.3%;
+    position: absolute;
+}

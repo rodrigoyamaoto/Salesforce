@@ -1,0 +1,29 @@
+<template>
+    <div>
+        <div class="sectionRow">
+            <div class="sectionThreeColumns">
+                <!-- Select Troop Type -->
+                <lightning-combobox
+                    name="troopType"
+                    label="Troop Type"
+                    value={troopTypeSelected}
+                    placeholder="Select Troop Type"
+                    options={troopTypeOptions}
+                    onchange={handleChange}
+                    required>
+                </lightning-combobox>
+            </div>
+            <div class="sectionThreeColumns">
+                <lightning-input type="number" label="Quantity Troop" placeholder="Quantity troops to recruit" onblur={troopQuantityInputBlur} required></lightning-input>
+            </div>
+            <div class="sectionThreeColumns">
+                <lightning-button variant="neutral" label="Calculate" onclick={calculateResources} class="buttonThreeColumns"></lightning-button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table Result -->
+    <div class="section">
+        <lightning-datatable key-field="id" data={dataTableInformation} columns={dataTableColumns}></lightning-datatable>
+    </div>
+</template>
