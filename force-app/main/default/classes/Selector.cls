@@ -4,6 +4,9 @@ public virtual class Selector {
     protected Set<String> fieldNameList;
     protected Schema.DescribeSObjectResult describeSObject;
     protected Map <String, Schema.SObjectType> objectTypeByObjectApiName = Schema.getGlobalDescribe();
+
+    // Variables to customize the Query
+    protected String orderBy = null;
     
     
     protected Selector(String objectName) {
@@ -49,7 +52,20 @@ public virtual class Selector {
     }
 
     public List<SObject> selectAll() {
+        return selectAll(null, null);
+    }
+
+    public List<SObject> selectAll(String orderBy, Integer limitRecords) {
         String query = 'SELECT ' + this.getFieldsQuery() + ' FROM ' + objectName;
+
+        if(String.isNotBlank(orderBy)) {
+            query += ' ORDER BY ' + orderBy;
+        }
+
+        if(limitRecords != null && limitRecords > 0) {
+            query += ' LIMIT ' + limitRecords;
+        }
+
         return Database.query(query);
     }
 }
