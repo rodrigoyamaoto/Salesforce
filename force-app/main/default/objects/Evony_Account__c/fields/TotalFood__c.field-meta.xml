@@ -3,7 +3,8 @@
     <fullName>TotalFood__c</fullName>
     <description>Total Food</description>
     <externalId>false</externalId>
-    <formula>(FoodBox_1K__c * 1000) +
+    <formula>WarehouseFood__c +
+(FoodBox_1K__c * 1000) +
 (FoodBox_5K__c * 5000) +
 (FoodBox_10K__c * 10000) +
 (FoodBox_50K__c * 50000) +

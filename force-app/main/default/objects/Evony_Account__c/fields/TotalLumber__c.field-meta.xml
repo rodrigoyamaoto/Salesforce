@@ -3,7 +3,8 @@
     <fullName>TotalLumber__c</fullName>
     <description>Total Lumber</description>
     <externalId>false</externalId>
-    <formula>(LumberBox_1K__c * 1000) +
+    <formula>WarehouseLumber__c +
+(LumberBox_1K__c * 1000) +
 (LumberBox_5K__c * 5000) +
 (LumberBox_10K__c * 10000) +
 (LumberBox_50K__c * 50000) +

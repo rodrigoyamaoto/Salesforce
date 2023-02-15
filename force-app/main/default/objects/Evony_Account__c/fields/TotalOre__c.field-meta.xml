@@ -3,7 +3,8 @@
     <fullName>TotalOre__c</fullName>
     <description>Total Ore</description>
     <externalId>false</externalId>
-    <formula>(OreBox_1k__c * 1000) +
+    <formula>WarehouseOre__c +
+(OreBox_1k__c * 1000) +
 (OreBox_5K__c * 5000) +
 (OreBox_10K__c * 10000) +
 (OreBox_50K__c * 50000) +

@@ -3,7 +3,8 @@
     <fullName>TotalStone__c</fullName>
     <description>Total Stone</description>
     <externalId>false</externalId>
-    <formula>(StoneBox_1K__c * 1000) +
+    <formula>WarehouseStone__c +
+(StoneBox_1K__c * 1000) +
 (StoneBox_5K__c * 5000) +
 (StoneBox_10K__c * 10000) +
 (StoneBox_50K__c * 50000) +
