@@ -8,6 +8,6 @@ public without sharing class Evony_TroopService {
 
     @AuraEnabled(cacheable = true)
     public static List<Evony_Troop__c> getAllTroops() {
-        return (List<Evony_Troop__c>) selector.selectAll('TroopName__c', null);
+        return (List<Evony_Troop__c>) selector.selectAll('TroopName__c');
     }
 }

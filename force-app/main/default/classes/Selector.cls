@@ -7,7 +7,8 @@ public virtual class Selector {
 
     // Variables to customize the Query
     protected String orderBy = null;
-    
+    protected String whereClause = null;
+    protected Integer limitRecords = null;
     
     protected Selector(String objectName) {
         this.objectName = objectName;
@@ -18,11 +19,11 @@ public virtual class Selector {
         // Get DescribeSObjectResult
         this.describeSObject = objectTypeByObjectApiName.get(this.objectName).getDescribe();
 
-        this.getFieldNameList();
+        this.populateFieldNameList();
     }
 
     /**
-     * Populate a String list with the name of all fields the SObject has
+     * Populate the variable fieldNameList with all SObject's fields
      * 
      * @date    01 February 2023
      * @author  Rodrigo Yoshida
@@ -30,7 +31,7 @@ public virtual class Selector {
      * History
      * <Date>      <Authors Name>     <Brief Description of Change>
      * ------------------------------------------------------------*/
-    private void getFieldNameList() {
+    private void populateFieldNameList() {
         Map<String, Schema.SObjectField> fieldsMap = describeSObject.fields.getMap();
 
         for(Schema.SObjectField field : fieldsMap.values()) {
@@ -51,21 +52,60 @@ public virtual class Selector {
         );
     }
 
-    public List<SObject> selectAll() {
-        return selectAll(null, null);
+    public Set<String> getFieldNameList() {
+        return new Set<String>(fieldNameList);
     }
 
-    public List<SObject> selectAll(String orderBy, Integer limitRecords) {
-        String query = 'SELECT ' + this.getFieldsQuery() + ' FROM ' + objectName;
+    protected String createQuery() {
+        String query = 'SELECT ' + this.getFieldsQuery() + ' FROM ' + this.objectName;
 
-        if(String.isNotBlank(orderBy)) {
-            query += ' ORDER BY ' + orderBy;
+        if(String.isNotBlank(this.whereClause)) {
+            query += ' WHERE ' + this.whereClause;
         }
 
-        if(limitRecords != null && limitRecords > 0) {
-            query += ' LIMIT ' + limitRecords;
+        if(String.isNotBlank(this.orderBy)) {
+            query += ' ORDER BY ' + this.orderBy;
         }
 
-        return Database.query(query);
+        if(this.limitRecords != null && this.limitRecords > 0) {
+            query += ' LIMIT ' + this.limitRecords;
+        }
+
+        return query;
+    }
+
+    /**
+     * Return a list with all records
+     * 
+     * @date    14 February 2023
+     * @author  Rodrigo Yoshida
+     * @return  List<SObject>
+     *
+     * History
+     * <Date>      <Authors Name>     <Brief Description of Change>
+     * ------------------------------------------------------------*/
+    public List<SObject> selectAll() {
+        return Database.query(this.createQuery());
+    }
+
+    public List<SObject> selectAll(String orderBy) {
+        this.orderBy = orderBy;
+        return this.selectAll();
+    }
+
+    /**
+     * Return the record with the specific Id
+     * 
+     * @date            14 February 2023
+     * @author          Rodrigo Yoshida
+     * @param Id        Record's identifier
+     * @return          SObject
+     *
+     * History
+     * <Date>      <Authors Name>     <Brief Description of Change>
+     * ------------------------------------------------------------*/
+    public List<SObject> selectById(String id) {
+        this.whereClause = 'Id = ' + id;
+        return Database.query(this.createQuery());
     }
 }

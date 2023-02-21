@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <types>
+        <members>CustomExceptions</members>
+        <members>Evony_AccountSelector</members>
+        <members>Evony_AccountService</members>
+        <members>Evony_GeneralSelector</members>
+        <members>Evony_GeneralService</members>
+        <members>Evony_GeneralSpecialtySkillSelector</members>
+        <members>Evony_SpecialtySkillSelector</members>
+        <members>Evony_TroopSelector</members>
+        <members>Evony_TroopService</members>
+        <members>ObjectCommonFields</members>
+        <members>Selector</members>
+        <name>ApexClass</name>
+    </types>
     
     <types>
         <members>Evony_Account__c</members>
@@ -19,6 +34,8 @@
     </types>
 
     <types>
+        <members>evony_AccountResourceVisualization</members>
+        <members>evony_GeneralsAnalysis</members>
         <members>evony_TroopTraining</members>
         <name>LightningComponentBundle</name>
     </types>

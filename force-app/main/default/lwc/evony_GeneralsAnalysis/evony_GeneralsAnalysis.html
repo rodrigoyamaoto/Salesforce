@@ -1,0 +1,21 @@
+<template>
+    <div>
+        <div class="section">
+            <!-- Select Generals -->
+            <lightning-checkbox-group 
+                name="Checkbox Group"
+                label="Select Generals"
+                options={checkBoxOptions}
+                value={checkBoxSelectedValues}
+                onchange={handleChange}>
+            </lightning-checkbox-group>
+        </div>
+        <div class="section">
+            <lightning-datatable 
+                key-field="id" 
+                data={dataTableInformation} 
+                columns={dataTableColumns}>
+            </lightning-datatable>
+        </div>
+    </div>
+</template>
