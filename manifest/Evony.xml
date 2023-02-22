@@ -2,7 +2,12 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 
     <types>
+        <!-- General Classes -->
         <members>CustomExceptions</members>
+        <members>ObjectCommonFields</members>
+        <members>Selector</members>
+
+        <!-- Evony Classes -->
         <members>Evony_AccountSelector</members>
         <members>Evony_AccountService</members>
         <members>Evony_GeneralSelector</members>
@@ -11,8 +16,6 @@
         <members>Evony_SpecialtySkillSelector</members>
         <members>Evony_TroopSelector</members>
         <members>Evony_TroopService</members>
-        <members>ObjectCommonFields</members>
-        <members>Selector</members>
         <name>ApexClass</name>
     </types>
     
@@ -28,6 +31,7 @@
     <types>
         <members>Evony_UtilityBar</members>
         <members>Evony_AccountLightningPage</members>
+        <members>Evony_TroopLightningPage</members>
         <members>General_Record_Page</members>
         <members>Specialty_Skill_Lightnin_Page</members>
         <name>FlexiPage</name>

@@ -3,6 +3,11 @@
     <fullName>All</fullName>
     <columns>NAME</columns>
     <columns>TroopName__c</columns>
+    <columns>FoodCost__c</columns>
+    <columns>LumberCost__c</columns>
+    <columns>OreCost__c</columns>
+    <columns>StoneCost__c</columns>
+    <columns>RecruitTime__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

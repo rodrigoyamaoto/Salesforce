@@ -2,12 +2,12 @@ import { LightningElement, track, wire, api } from 'lwc';
 import getTroopList from '@salesforce/apex/Evony_TroopService.getAllTroops';
 
 const dataTableColumns = [
-    {label: 'Troop', fieldName: 'troopName'},
-    {label: 'Total Ore', fieldName: 'totalOre', type: 'number'},
-    {label: 'Total Food', fieldName: 'totalFood', type: 'number'},
-    {label: 'Total Stone', fieldName: 'totalStone', type: 'number'},
-    {label: 'Total Lumber', fieldName: 'totalLumber', type: 'number'},
-    {label: 'Total Recruit Time', fieldName: 'totalRecruitTime', type: 'string', cellAttributes: {alignment: 'right'}}
+    {label: 'Troop', fieldName: 'troopName', initialWidth: 125},
+    {label: 'Total Ore', fieldName: 'totalOre', type: 'number', initialWidth: 140},
+    {label: 'Total Food', fieldName: 'totalFood', type: 'number', initialWidth: 140},
+    {label: 'Total Stone', fieldName: 'totalStone', type: 'number', initialWidth: 140},
+    {label: 'Total Lumber', fieldName: 'totalLumber', type: 'number', initialWidth: 140},
+    {label: 'Total Recruit Time', fieldName: 'totalRecruitTime', type: 'string', initialWidth: 180, cellAttributes: {alignment: 'right'}}
 ];
 
 export default class Evony_TroopTraining extends LightningElement {
